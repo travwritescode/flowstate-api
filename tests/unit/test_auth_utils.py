@@ -4,7 +4,7 @@ import pytest
 from jose import jwt
 
 from app.config import settings
-from app.routers.auth import create_access_token, hash_password, verify_password
+from app.utils.auth import create_access_token, hash_password, verify_password
 
 
 class TestHashPassword:
