@@ -33,6 +33,9 @@ alembic/versions/__pycache__/
 .DS_Store
 Thumbs.db
 
+# Personal notes
+ARCHITECTURE_NOTES.md
+
 # Test artifacts
 .pytest_cache/
 .coverage
