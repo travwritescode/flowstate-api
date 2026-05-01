@@ -2,6 +2,10 @@
 
 A task manager REST API built with FastAPI and Python. Designed as a test automation target — clean architecture, JWT auth, full CRUD, and auto-generated OpenAPI docs.
 
+**Companion UI:** [flowstate-ui](https://github.com/travwritescode/flowstate-ui).
+
+**Contracts / broker:** [Pactflow](https://pactflow.io/) (hosted Pact broker) — see [docs.pactflow.io](https://docs.pactflow.io/).
+
 ---
 
 ## Tech Stack
