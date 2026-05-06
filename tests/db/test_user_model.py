@@ -12,6 +12,8 @@ class TestCreateUser:
         db.refresh(user)
 
         assert user.id is not None
+        assert user.public_id is not None
+        assert len(user.public_id) == 36
         assert user.email == "test@example.com"
 
     def test_user_can_be_queried_back(self, db):

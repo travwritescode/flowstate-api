@@ -24,6 +24,8 @@ class TestCreateTask:
         db.refresh(task)
 
         assert task.id is not None
+        assert task.public_id is not None
+        assert len(task.public_id) == 36
         assert task.title == "Write tests"
 
     def test_task_can_be_queried_back(self, db, user):

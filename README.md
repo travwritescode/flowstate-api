@@ -51,6 +51,8 @@ flowstate-api/
 
 ## Local Setup
 
+Requires **Python 3.10+** (CI uses **3.12**). Public resource identifiers in JSON and in `/tasks/{...}` paths are **UUIDs** (`public_id`); integer primary keys are internal only.
+
 ### 1. Clone and enter the repo
 
 ```bash
