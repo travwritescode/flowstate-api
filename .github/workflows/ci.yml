@@ -27,3 +27,12 @@ jobs:
 
       - name: Run unit tests
         run: pytest -m unit
+
+      - name: Trigger E2E regression
+        if: github.event_name == 'push'
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.E2E_DISPATCH_TOKEN }}
+          repository: travwritescode/playwright-ts-framework
+          event-type: regression-trigger
+          client-payload: '{"source": "flowstate-api"}'
